@@ -7,7 +7,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 
 
-def preprocess_text(text, logger):
+def preprocess_text(text):
     """Clean and preprocess text for analysis."""
     try:
         if not isinstance(text, str):
@@ -20,6 +20,6 @@ def preprocess_text(text, logger):
         tokens = [WordNetLemmatizer().lemmatize(token) for token in tokens if token not in stop_words]
         return ' '.join(tokens)
     except Exception as e:
-        logger.error(f"Error preprocessing text: {e}")
+        logging.error(f"Error preprocessing text: {e}")
         return ''
     
