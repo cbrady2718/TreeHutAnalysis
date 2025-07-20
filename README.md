@@ -1,4 +1,4 @@
-# 🌳 TreeHut Instagram Engagement Analysis
+# 🧴 TreeHut Instagram Engagement Analysis
 
 **Author:** Chris Brady
 
